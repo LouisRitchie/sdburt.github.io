@@ -1,0 +1,324 @@
+extends _layout
+
+block content
+  .navbar-wrapper
+    .container
+      nav.navbar.navbar-inverse.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='/')
+              img(src='/img/logo_invert.png' height="50px")
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.dropdown.active.front-page
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | Sponsors
+                  span.caret
+                ul.dropdown-menu
+                  li.active
+                    a(href='/becomeasponsor/') Become a Sponsor
+                  li
+                    a(href='/sponsors/') UV16 Sponsors
+                  li
+                    a(href='/indisponsors/') Individual Sponsors
+
+              li.dropdown.front-page
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | About
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/aboutcar/') The Car
+                  li
+                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
+                  li
+                    a(href='/aboutteam/') The Team
+                  li
+                    a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/contact/') Contact
+
+
+  //- include _socialmedia.jade
+
+  .container.marketing
+    .row
+      .col-sm-12
+        h1(style="color:black;text-align:center;text-decoration:underline") Becoming a Sponsor
+      .col-sm-12(style="color:black;background-color:#eeeeee;margin-top:20px;margin-bottom:10px;border-radius:20px;")
+        h2(style="text-align:center;margin-bottom:0;")
+          | Thank you to our sponsors for their support!
+
+        h5(style="text-align:center;padding-left:5%;padding-right:5%")
+          | The UVic Formula Motorsport team is made   possible through generous support from our sponsors. Our sponsors provide valuable resources, expertise and parts to help create outstanding engineers and business students with extensive technical experience and effective managerial skills.
+
+      .col-sm-12
+        #sponsorlevels.table-responsive
+          table.table.table-hover
+            thead
+              tr(style="text-align:center;")
+                th
+                th.header
+                  img(src="/img/sponsors/logos/steel.png" style="max-height:20px;")
+                th.header
+                  img(src="/img/sponsors/logos/bronze.png" style="max-height:20px;")
+                th.header
+                  img(src="/img/sponsors/logos/silver.png" style="max-height:20px;")
+                th.header
+                  img(src="/img/sponsors/logos/gold.png" style="max-height:20px;")
+                th.header
+                  img(src="/img/sponsors/logos/platinum.png" style="max-height:20px;")
+                th.header
+                  img(src="/img/sponsors/logos/title.png" style="border-radius:30px;box-shadow: 0 0 .8rem .4rem rgba(0,0,0,.65);max-height:30px")
+            tbody
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Financial contribution or equivalent products & services
+                td $100+
+                td $1,000+
+                td $2,500+
+                td $5,000+
+                td $10,000+
+                td
+                  a(href='/contact/') Contact Us!
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Company logo size when displayed.
+                td 6th Largest
+                td 5th Largest
+                td 4th Largest
+                td 3rd Largest
+                td 2nd Largest
+                td Largest
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Linked logo on website.
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Electronically sent team signed Thank You card.
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                td
+                td
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Printed team signed thank you card.
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Social Media Coverage.
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Invitations to all team events
+                td
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Competition Recap Report
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Linked logo on website with a description of your company
+                td
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Availability of the car and team members for a company event
+                    sup
+                      | &nbsp;1
+                td
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Exclusive Pit Access
+                td
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Dedicated half page on team website & full description of your company
+                td
+                td
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Help determine team paint scheme and choice of logo placements on the car
+                td
+                td
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Company logo on Car & Trailer
+                td
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Company logo on left sleve of team apparel
+                td
+                td
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | Company logo included in team letterheads on all communications and media
+                td
+                td
+                td
+                td
+                td
+                td
+                  .fa.fa-check
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | # of Team T-shirts
+                td
+                td
+                td
+                td 6
+                td 6
+                td 6
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | # of Customized "Team Polo"
+                td
+                td
+                td
+                td 1
+                td 1
+                td
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | # of Customized Team Hoodies
+                td
+                td
+                td
+                td
+                td 1
+                td 2
+              tr
+                td(style="text-align:left;")
+                  strong
+                    | # of Customized Team Jackets
+                td
+                td
+                td
+                td
+                td
+                td 2
+          h5
+            | 1 : Lower Mainland or Vancouver locations

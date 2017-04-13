@@ -1,0 +1,59 @@
+extends _layout
+
+block content
+  .navbar-wrapper
+    .container
+      nav.navbar.navbar-inverse.navbar-fixed-top
+        .container
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a(href='/')
+              img(src='/img/logo_invert.png' height="50px")
+          #navbar.navbar-collapse.collapse
+            ul.nav.navbar-nav.navbar-right
+              li.front-page
+                a(href='/') Home
+              li.dropdown.front-page
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | Sponsors
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/becomeasponsor/') Become  Sponsor
+                  li
+                    a(href='/sponsors/') UV16 Sponsors
+                  li
+                    a(href='/indisponsors/') Individual Sponsors
+
+              li.dropdown.active.front-page
+                a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                  | About
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='/aboutcar/') The Car
+                  li.active
+                    a(href='/render/') &nbsp;&nbsp;&nbsp;UV15 Render
+                  li
+                    a(href='/aboutteam/') The Team
+                  li
+                    a(href='/aboutcomp/') The Competition
+              li.front-page
+                a(href='/contact/') Contact
+
+  //  Marketing messaging and featurettes
+  //  ==================================================
+  //  Wrap the rest of the page in another container to center all the content.
+  .container
+    .row
+      br
+      .col-xs-12
+        iframe(src='/render/UV15 - Final - Aug8_VR.11.html', style="display: block; margin: 0 auto;", width='100%', height='720px', frameborder='10') iframe not supported by your browser
+
+  //- include _socialmedia.jade
+  //- include _sponsors.jade
+
