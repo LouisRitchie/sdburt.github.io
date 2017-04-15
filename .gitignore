@@ -1,37 +1,37 @@
-_site
-.idea
-node_modules
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+config.codekit
+
+# Icon must end with two \r
+Icon
 
 
-# Created by https://www.gitignore.io/api/sass,jekyll,windows
+# Thumbnails
+._*
 
-### Jekyll ###
-_site/
-.sass-cache/
-.jekyll-metadata
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
 
 ### Sass ###
-*.css.map
+.sass-cache
 
-### Windows ###
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
 
-# Folder config file
-Desktop.ini
+### NodeJS ###
+node_modules
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+### Bower ###
+source/vendors
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# End of https://www.gitignore.io/api/sass,jekyll,windows
+### Build ###
+build
