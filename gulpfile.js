@@ -11,6 +11,8 @@ gulp.task('compile-jade', function() {
     return gulp.src(["views/*.jade", "!views/error.jade"])
         .pipe(jade())
 		.pipe(replace('src="/', 'src="./'))
+		.pipe(replace('href="/', 'href="./'))
+		.pipe(replace(/href=".\/([A-Za-z\d-_]*)\/"/g, 'href="./$1.html/"'))
         .pipe(gulp.dest('build'));
 });
 
