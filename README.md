@@ -1,6 +1,16 @@
-# tempsite-mk2
-second tempsite
+# UVic FSAE site
+
+[UVic FSAE](fsae.ca)
+
+### Running with Express
 ```
-npm install
+npm i
 npm start
+```
+
+### Building static site with Gulp
+## (In progress)
+```
+npm i
+gulp
 ```
