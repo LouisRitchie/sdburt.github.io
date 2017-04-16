@@ -13,6 +13,10 @@ gulp.task('compile-jade', function() {
 		.pipe(replace('src="/', 'src="./'))
 		.pipe(replace('href="/', 'href="./'))
 		.pipe(replace(/href=".\/([A-Za-z\d-_]*)\/"/g, 'href="./$1.html/"'))
+		.pipe(replace(/<title>/, /<title>UVic FSAE/))
+		.pipe(replace("aboutcomp", "comp"))
+		.pipe(replace("aboutteam", "team"))
+		.pipe(replace("aboutcar", "car"))
         .pipe(gulp.dest('build'));
 });
 
